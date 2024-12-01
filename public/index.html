@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Management</title>
+    <style>
+      /* General Body Styles */
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f7fc;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      /* Main Container */
+      #root {
+        background-color: #ffffff;
+        width: 80%;
+        max-width: 1200px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+      }
+
+      /* Header Styles */
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: #3a3a3a;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        color: #666;
+        margin-top: 10px;
+      }
+
+      /* Button Styling */
+      button {
+        background-color: #007bff;
+        color: white;
+        font-size: 1rem;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      /* Card Styling */
+      .card {
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin: 20px 0;
+        padding: 20px;
+      }
+
+      .card h3 {
+        color: #333;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        color: #666;
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+
+      /* Flexbox Grid for User Cards */
+      .user-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .user-card {
+        width: 48%;
+        margin-bottom: 20px;
+        background-color: #fafafa;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .user-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .user-card .user-name {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .user-card .user-info {
+        font-size: 1rem;
+        color: #555;
+      }
+
+      /* Footer Style */
+      footer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #888;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root">
+      <header>
+        <h1>User Management Dashboard</h1>
+        <h2>Welcome to the user management panel</h2>
+        <div class="my-4">
+            <button onclick="window.location.href='http://localhost:8080';">Dasbohard
+            </button>
+          </div>
+      </header>
+
+      <section class="user-list">
+        <!-- Example User Card 1 -->
+        <div class="user-card">
+          <h3 class="user-name">John Doe</h3>
+          <p class="user-info">Email: john.doe@example.com</p>
+          <p class="user-info">Role: Administrator</p>
+        </div>
+        <!-- Example User Card 2 -->
+        <div class="user-card">
+          <h3 class="user-name">Jane Smith</h3>
+          <p class="user-info">Email: jane.smith@example.com</p>
+          <p class="user-info">Role: Moderator</p>
+        </div>
+      </section>
+
+      
+      <footer>
+        <p>&copy; 2024 User Management System | All Rights Reserved</p>
+      </footer>
+    </div>
+  </body>
+</html>
